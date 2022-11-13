@@ -25,26 +25,48 @@
 // 82 -> 10
 // 9012 -> 12
 
-int CountOfDigits(int num)
-{
-    int sum = 0;
-    int temp;
-    while (num != 0)
-    {
-        temp = num%10;
-        sum += temp;
-        num = num / 10;
-    }
-    return sum;
-}
+// int CountOfDigits(int num)
+// {
+//     int sum = 0;
+//     int temp;
+//     while (num != 0)
+//     {
+//         temp = num%10;
+//         sum += temp;
+//         num = num / 10;
+//     }
+//     return sum;
+// }
 
-System.Console.WriteLine($"Input integer number: ");
-int num = Convert.ToInt32(Console.ReadLine());
-Console.Write($"the sum of the numbers in the \"{num}\" is {CountOfDigits(num)}, Sooooo...another math from me, i'm not just a computer, i'm a calculator :'( ");
+// System.Console.WriteLine($"Input integer number: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// Console.Write($"the sum of the numbers in the \"{num}\" is {CountOfDigits(num)}, Sooooo...another math from me, i'm not just a computer, i'm a calculator :'( ");
 
 // Задача 29: Напишите программу, которая создает массив заданного пользователем размера, 
-//заполняет массив элементами от 1 до 99 и выводит их на экран.
-
+// заполняет массив элементами от 1 до 99 и выводит их на экран.
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
-
 // 6, 1, 33 -> [6, 1, 33]
+
+// int [] CreateNewArray (int x )
+// {
+//     int [] array = new int [x];
+//     for (int i =0; i<x; i++)
+//     {
+//         array[i] = new Random().Next(1, 100);
+//     }
+//     return array;
+// }
+
+// void ShowArray (int [] array)
+// {
+//     System.Console.Write("your array is [");
+// for (int i = 0; i<array.Length; i++)
+// {
+//     System.Console.Write(array[i]+ ", ");
+// }
+// System.Console.WriteLine("\b\b], YEAH! Hooray! i'm a real machine! [^_^] ");
+// }
+// System.Console.WriteLine($"Input integer and positive number that will be array length: ");
+// int x = Convert.ToInt32(Console.ReadLine());
+
+// ShowArray(CreateNewArray(x));
